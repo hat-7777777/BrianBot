@@ -3,6 +3,9 @@ from discord.ext import commands
 from pydub import AudioSegment
 from pydub.playback import play
 
+#Replace INSERT TOKEN HERE with your Discord bot token
+"INSERT TOKEN HERE" = token
+
 global playing
 playing = False
 client = commands.Bot(command_prefix="!brian")
@@ -47,5 +50,4 @@ async def tts(ctx, *, payload):
                 playing = False
                 await ctx.send("Done :thumbsup:")
 
-#Replace "INSERT TOKEN HERE" with your Discord bot token
-client.run("INSERT TOKEN HERE")
+client.run("token")
