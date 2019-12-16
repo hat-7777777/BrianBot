@@ -3,8 +3,13 @@ from discord.ext import commands
 from pydub import AudioSegment
 from pydub.playback import play
 
+<<<<<<< HEAD
 #Replace "INSERT TOKEN HERE" with your Discord bot token
 token = "NjUxMTQ4NjcyMTY3NTc1NTU0.XfPtXQ.edJvXcq7W6BvzezRIOXLqR3BVsY"
+=======
+#Replace INSERT TOKEN HERE with your Discord bot token
+"INSERT TOKEN HERE" = token
+>>>>>>> f61414cad8800085eb81a4ecde13c111ff5646d9
 
 global playing
 playing = False
@@ -50,5 +55,9 @@ async def tts(ctx, *, payload):
                 playing = False
                 await ctx.send("Done :thumbsup:")
 
+<<<<<<< HEAD
 
 client.run(token)
+=======
+client.run("token")
+>>>>>>> f61414cad8800085eb81a4ecde13c111ff5646d9
