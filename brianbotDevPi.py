@@ -1,10 +1,10 @@
-import discord, requests, random, os
+import discord, requests, random, os, time
 from discord.ext import commands
 from pydub import AudioSegment
 from pydub.playback import play
 
 #Replace "INSERT TOKEN HERE" with your Discord bot token
-token = "NjUxMTQ4NjcyMTY3NTc1NTU0.XffpZg.CSkNjptmMF979cj6CUnb88D92UE"
+token = "NjUxMTQ4NjcyMTY3NTc1NTU0.Xfk3yQ.omkLX_yCSIYFuABspDMy1vg5FQE"
 
 global playing
 playing = False
@@ -17,6 +17,14 @@ async def on_ready():
 
 async def playsound(audiofile):
         await play(audiofile)
+
+@client.command()
+async def test(ctx):
+    await ctx.send("Test message")
+    time.sleep(1)
+    await ctx.send("Message...")
+    time.sleep(0.5)
+    await ctx.send("2?")
 
 @client.command()
 async def tts(ctx, *, payload):
