@@ -4,7 +4,7 @@ from pydub import AudioSegment
 from pydub.playback import play
 
 # Replace "INSERT TOKEN HERE" with your Discord bot token
-token = "NjUxMTQ4NjcyMTY3NTc1NTU0.XgV5OQ.z7QvKRySL0uGmvuMcCJjzJsH8rQ"
+token = "INSERT TOKEN HERE"
 
 global playing
 global muted
